@@ -507,32 +507,196 @@
                         p-8
                         overflow-hidden">
 
-                            <!-- DASHBOARD ILLUSTRATION -->
+                            <!-- DASHBOARD CONTAINER -->
+                            <div class="space-y-6">
 
-                            <!-- DASHBOARD HEADER -->
-                            <div class="flex items-center justify-between">
+                                <!-- DASHBOARD HEADER -->
                                 <div>
-                                    <h3>Today's Activity</h3>
-                                    <p>Updated 2 mins ago</p>
+                                    <h3 class="text-lg font-semibold
+                                    text-[#F8FAFC]">Today's Activity</h3>
+                                    <p class="text-sm text-slate-400
+                                    mt-1">Updated 2 mins ago</p>
                                 </div>
 
-                                <div>
-                                    <!-- Small green status dot -->
+                                <div class="flex items-center gap-2">
+
+                                    <!-- STATUS DOT -->
+
+                                    <div class="
+                                    h-2.5
+                                    w-2.5
+                                    rounded-full
+                                    bg-[#39B98A]
+                                    animate-pulse
+                                    "></div>
+
+                                    <!-- LIVE TEXT -->
+                                    <p class="text-sm font-medium text-[#39B98A]">
+                                        Live
+                                    </p>
+
                                 </div>
 
-                                <!-- METRICS CARD GRID -->
-                                <div class="grid grid-cols-2 gap-4 ">
+
+
+                                <!-- METRICS GRID -->
+                                <div class="grid grid-cols-2 gap-4">
+
+                                    <!-- HEART RATE CARD -->
+                                    <div class="bg-white/5 border 
+                                    border-white/10 rounded-2xl p-5 h-36
+                                    transition-all
+                                    duration-300
+                                    hover:-translate-y-1
+                                  hover:border-[#39B98A]/30">
+
+                                        <p class="text-sm
+                                      text-slate-400
+                                        mt-4">Heart Rate</p>
+                                        <p class="text-2xl font-bold
+                                        text-white mt-2">72 BPM</p>
+                                    </div>
+
+
+                                    <!-- ICON -->
+
+                                    <div class="w-10 h-10
+                                    rounded-2xl bg-[#39B98A]/15
+                                    border border-[#39B98A]/20
+                                    flex items-center justify-center"><i data-lucide="activity"></i></div>
+                                </div>
+
+
+                                <!-- STEPS CARD -->
+                                <div class="bg-white/5
+                                border border-white/10
+                                rounded-2xl
+                                p-5
+                                h-36
+                                transition-all
+                                duration-300
+                                hover:-translate-y-1
+                              hover:border-[#39B98A]/30">
+
+                                    <!-- ICON -->
+                                    <div class="w-10 h-10
+                                    rounded-2xl
+                                    bg-[#39B98A]/15
+                                    border border-[#39B98A]/20
+                                    flex items-center justify-center">
+
+                                        <i data-lucide="footprints" class="w-5 h-5 text-[#39B98A]"></i>
+
+                                    </div>
+
+                                    <!-- CONTENT -->
+                                    <p class="text-sm text-slate-400 mt-4">
+                                        Steps
+                                    </p>
+
+                                    <p class="text-2xl font-bold text-[#F8FAFC] mt-2">
+                                        10,842
+                                    </p>
 
                                 </div>
 
+
+                                <!-- CALORIES CARD -->
+                                <div class="bg-white/5
+                                border border-white/10
+                                rounded-2xl
+                                p-5
+                                h-34
+                                transition-all
+                                duration-300
+                                hover:-translate-y-1
+                                hover:border-[#39B98A]/30">
+
+                                    <!-- ICON -->
+                                    <div class="w-10 h-10
+                                    rounded-2xl
+                                    bg-[#39B98A]/15
+                                    border border-[#39B98A]/20
+                                    flex items-center justify-center">
+
+                                        <i data-lucide="flame" class="w-5 h-5 text-[#39B98A]"></i>
+
+                                    </div>
+
+                                    <!-- CONTENT -->
+                                    <p class="text-sm text-slate-400 mt-4">
+                                        Calories Burned
+                                    </p>
+
+                                    <p class="text-2xl font-bold text-[#F8FAFC] mt-2">
+                                        684 kcal
+                                    </p>
+
+                                    <p class="text-sm text-[#39B98A] mt-2">
+                                        +12% Today
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- WEEKLY PROGRESS CARD -->
+                                <div class="bg-white/5
+                                border border-white/10
+                                rounded-2xl
+                                p-6
+                                h-40
+                                transition-all
+                                duration-300
+                                hover:-translate-y-1
+                                hover:border-[#39B98A]/30">
+
+                                    <!-- HEADER -->
+                                    <div class="flex items-center gap-2">
+
+                                        <i data-lucide="trending-up" class="w-5 h-5 text-[#39B98A]"></i>
+
+                                        <p class="text-sm text-slate-400">
+                                            Weekly Progress
+                                        </p>
+
+                                    </div>
+
+                                    <!-- PROGRESS BAR -->
+                                    <div class="w-full
+                                    h-2
+                                    rounded-full
+                                    bg-white/10
+                                    overflow-hidden
+                                    mt-4">
+
+                                        <div class="h-full
+                                        w-[82%]
+                                        rounded-full
+                                        bg-[#39B98A]"></div>
+
+                                    </div>
+
+                                    <!-- PROGRESS -->
+                                    <p class="text-2xl
+                                    font-bold
+                                    text-[#39B98A]
+                                    mt-5">
+                                        +18%
+                                    </p>
+
+                                    <p class="text-sm
+                                   text-slate-400
+                                   mt-1">
+                                        Ahead of Goal
+                                    </p>
+
+                                </div>
                             </div>
 
                         </div>
-
                     </div>
-
                 </div>
-
                 <!-- SECTION DIVIDER -->
                 <div class="h-px bg-white/10 my-16"></div>
 
